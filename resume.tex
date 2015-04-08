@@ -1,0 +1,170 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage{fontspec}
+
+\setsansfont{Linux Libertine O}
+
+% casual (default), classic, oldstyle or banking
+\moderncvstyle{classic}
+% blue (default), orange, green, red, purple, grey or black
+\moderncvcolor{purple}
+
+\usepackage[shortlabels,inline]{enumitem}
+\usepackage[scale=0.75]{geometry}
+
+\usepackage[unicode]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=color1,
+    citecolor=color1,
+    filecolor=color1,
+    urlcolor=color1
+}
+
+\name{Hugo}{Mougard}
+
+\address{LINA, Université de Nantes}%
+{2 rue de la Houssinière}%
+{44322 Nantes Cedex 03, France}
+
+\phone[mobile]{+33~(0)~6~37~63~82~71}
+
+\phone[fixed]{+33~(0)~2~51~12~53~29}
+
+\email{hugo.mougard@univ-nantes.fr}
+
+\homepage{http://crydee.eu}
+
+\social[github]{m09}
+
+\photo[64pt]{photo}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+\cventry{2014–current}{Ph.D. in Computer Science}{University of
+  Nantes}{}{}{Subject: Multimodal Alignment for Educational Resources}
+\cventry{2012–2014}{M.Sc. in Computer Science}{University of
+  Nantes}{}{}{\href{http://atal.univ-nantes.fr}{ATAL} specialization
+  in Machine Learning \& Natural Language Processing}
+\cventry{2009–2012}{B.Sc. in Computer Science}{University of Nantes}{}{}{}
+
+\section{Experience}
+\subsection{Internships}
+\cventry{2014}{Text simplification}{National Institude of
+  Informatics}{Tokyo}{5 months}{%
+  Contribute to the Gaze-N.L.P. team work in Aizawa Laboratory:
+  \begin{itemize}
+  \item study literature and find a research question: “How to best
+    learn to simplify text using Simple Wikipedia edit history as a
+    weak learning signal?” (1 month);
+  \item develop of a corpus and related tools (2 months),
+    \href{https://github.com/m09/readability}{publicly available};
+  \item investigate simplification techniques (1 month);
+  \item write-up the internship report (2 weeks).
+  \end{itemize}
+}
+
+\cventry{2013}{Information Retrieval}{Dublin City
+  University}{Dublin}{3 months}{%
+  Contribute to the Information Retrieval team work in several
+  aspects:
+  \begin{itemize}
+  \item study the field through the available literature;
+  \item refactor, expand and evaluate an existing system for request
+    expansion;
+  \item help the SIGIR '2013 team as a volounteer.
+  \end{itemize}
+}
+
+\cventry{2012}{Grammatical Inference}{Laboratoire d'Informatique
+  Nantes Atlantique}{Nantes}{2 months}{%
+  Gather, organize and make accessible the state of the art algorithms
+  implementations in Grammatical Inference:
+  \begin{itemize}
+  \item discover the field through a bibliographic study;
+  \item spot and acquire implementations of the main algorithms by
+    contacting the main researchers in the field and the winners of
+    the competitions organized on the matter;
+  \item publish the resulting software on a website.
+  \end{itemize}
+}
+
+\nocite{*}
+\bibliographystyle{apalike}
+\bibliography{papers}
+
+\section{Research Interests}
+\cvitem{}{My research interests are alignment algorithms, multimodal
+  Information Retrieval, Machine Learning applied to Natural Language
+  Processing and educative and scholarly data use.}
+
+\section{Skills}
+\cvitem{Software}{Extensive knowledge of \textbf{UIMA}, very good
+  knowledge of Weka, OpenNLP and Stanford CoreNLP, good knowledge of
+  Lucene, GIZA++ and other central NLP frameworks and libraries.}
+
+\cvitem{Programming languages}{\textbf{Language agnostic}, comfortable
+  in Java, Python, Bash, Scala, Prolog, Haskell, C, etc.}
+
+\section{Languages}
+\cvitem{French}{\textbf{Mother tongue}}{}
+\cvitem{English}{\textbf{Expert}}{}
+\cvitem{Spanish}{Good reading comprehension}{}
+\cvitem{Japanese}{Basic knowledge}{}
+
+\section{References}
+\begin{itemize}
+\item Dr.~Colin de la Higuera, Professor at Nantes University,
+  <\href{mailto:cdlh@univ-nantes.fr}{cdlh@univ-nantes.fr}>
+\item Dr.~Akiko Aizawa, Professor at NII and University of Tokyo,
+  <\href{mailto:aizawa@nii.ac.jp}{aizawa@nii.ac.jp}>
+\item Dr.~Lorraine Goeuriot, Assistant Professor at Université Joseph
+  Fourier,
+  <\href{mailto:lorraine.goeuriot@imag.fr}{lorraine.goeuriot@imag.fr}>
+\item Dr.~Florian Boudin, Assistant Professor at Nantes University,
+  <\href{mailto:florian.boudin@univ-nantes.fr}{florian.boudin@univ-nantes.fr}>
+\end{itemize}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{LxMLS 2015}{Instituto Superior Técnico\\%
+Lisbon, Portugal}
+\date{April 8, 2015}
+\opening{To whom it may concern,}
+\closing{Best regards,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I started a Ph.D. 6 months ago that is deeply linked to paraphrase
+detection, topic modeling and several other language comprehension
+tasks. The power of the deep learning models in those tasks has
+already been demonstrated and I can't wait to learn more about them in
+the LxMLS.
+
+Furthermore, Machine Learning is a core domain of the team
+I am a part of and it would represent for us an opportunity to start
+exploring deep learning with a better understanding.
+
+\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
