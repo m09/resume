@@ -9,8 +9,11 @@
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 \usepackage{fontspec}
-
-\setsansfont{Linux Libertine O}
+\setsansfont[
+BoldFont=LinLibertine_RB.otf,
+ItalicFont=LinLibertine_RI.otf,
+BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
 
 % casual (default), classic, oldstyle or banking
 \moderncvstyle{classic}
@@ -31,17 +34,12 @@
 
 \name{Hugo}{Mougard}
 
-\address{LINA, Université de Nantes}%
-{2 rue de la Houssinière}%
-{44322 Nantes Cedex 03, France}
+\address{18 rue Paul Ramadier}%
+{44200 Nantes, France}
 
 \phone[mobile]{+33~(0)~6~37~63~82~71}
 
-\phone[fixed]{+33~(0)~2~51~12~53~29}
-
-\email{hugo.mougard@univ-nantes.fr}
-
-\homepage{http://crydee.eu}
+\email{hugo.mougard@gmail.com}
 
 \social[github]{m09}
 
@@ -52,78 +50,37 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2014–current}{Ph.D. in Computer Science}{University of
-  Nantes}{}{}{Subject: Multimodal Alignment for Educational Resources}
+\cventry{2014–2016}{Ph.D. in Computer Science}{University of
+  Nantes}{\textbf{undefended}}{}{Subject: Multimodal Alignment for Educational Resources}
 \cventry{2012–2014}{M.Sc. in Computer Science}{University of
   Nantes}{}{}{\href{http://atal.univ-nantes.fr}{ATAL} specialization
   in Machine Learning \& Natural Language Processing}
 \cventry{2009–2012}{B.Sc. in Computer Science}{University of Nantes}{}{}{}
 
-\section{Experience}
-\subsection{Internships}
+\section{Internships}
 \cventry{2014}{Text simplification}{National Institude of
-  Informatics}{Tokyo}{5 months}{%
-  Contribute to the Gaze-N.L.P. team work in Aizawa Laboratory:
-  \begin{itemize}
-  \item study literature and find a research question: “How to best
-    learn to simplify text using Simple Wikipedia edit history as a
-    weak learning signal?” (1 month);
-  \item develop of a corpus and related tools (2 months),
-    \href{https://github.com/m09/readability}{publicly available};
-  \item investigate simplification techniques (1 month);
-  \item write-up the internship report (2 weeks).
-  \end{itemize}
-}
+  Informatics}{Tokyo}{5 months}{Text simplification using Simple English Wikipedia.}
 
 \cventry{2013}{Information Retrieval}{Dublin City
-  University}{Dublin}{3 months}{%
-  Contribute to the Information Retrieval team work in several
-  aspects:
-  \begin{itemize}
-  \item study the field through the available literature;
-  \item refactor, expand and evaluate an existing system for request
-    expansion;
-  \item help the SIGIR '2013 team as a volounteer.
-  \end{itemize}
-}
+  University}{Dublin}{3 months}{Query expansion on medical data.}
 
 \cventry{2012}{Grammatical Inference}{Laboratoire d'Informatique
-  Nantes Atlantique}{Nantes}{2 months}{%
-  Gather, organize and make accessible the state of the art algorithms
-  implementations in Grammatical Inference:
-  \begin{itemize}
-  \item discover the field through a bibliographic study;
-  \item spot and acquire implementations of the main algorithms by
-    contacting the main researchers in the field and the winners of
-    the competitions organized on the matter;
-  \item publish the resulting software on a website.
-  \end{itemize}
-}
+  Nantes Atlantique}{Nantes}{2 months}{Bibliographic study.}
 
-\nocite{*}
+\nocite{boudin-mougard-favre:2015:EMNLP}
+\nocite{Mougard:2015:PVW:2740908.2742017}
+\nocite{mougardrecital2015}
 \bibliographystyle{apalike}
-\begin{thebibliography}{}
-
-\bibitem[Mougard et~al., 2015]{mougard15:_paper_video}
-Mougard, H., Riou, M., de~la Higuera, C., Quiniou, S., and Aubert, O. (2015).
-\newblock The paper of the video: Why choose?
-\newblock In {\em Proceedings of the SAVE-SD Workshop of the 2015 World Wide
-  Web Conference}, page In press.
-
-\end{thebibliography}
+\bibliography{bibtex}
 
 \section{Research Interests}
-\cvitem{}{My research interests are alignment algorithms, multimodal
-  Information Retrieval, Machine Learning applied to Natural Language
-  Processing and educative and scholarly data use.}
+\cvitem{}{My research interests are centered around multimodal
+  Information Retrieval and Machine Learning applied to Natural Language
+  Processing. More precisely, I enjoy working on text representation and understanding.}
 
 \section{Skills}
-\cvitem{Software}{Extensive knowledge of \textbf{UIMA}, very good
-  knowledge of Weka, OpenNLP and Stanford CoreNLP, good knowledge of
-  Lucene, GIZA++ and other central NLP frameworks and libraries.}
-
-\cvitem{Programming languages}{\textbf{Language agnostic}, comfortable
-  in Java, Python, Bash, Scala, Prolog, Haskell, C, etc.}
+\cvitem{Software}{Good knowledge of several Machine Learning and Natural Language Processing frameworks: UIMA, OpenNLP, Stanford CoreNLP, Theano, Lasagne, Lucene, GIZA++.}
+\cvitem{Programming languages}{Language agnostic with more experience in Java, Python and Bash.}
 
 \section{Languages}
 \cvitem{French}{\textbf{Mother tongue}}{}
@@ -187,3 +144,6 @@ Mougard, H., Riou, M., de~la Higuera, C., Quiniou, S., and Aubert, O. (2015).
 
 
 % %% end of file `template.tex'.
+%%% Local Variables: 
+%%% coding: utf-8
+%%% mode: latex
