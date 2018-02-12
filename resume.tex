@@ -19,11 +19,19 @@ BoldItalicFont=LinLibertine_RBI.otf
 \moderncvstyle{classic}
 % blue (default), orange, green, red, purple, grey or black
 \moderncvcolor{purple}
-
+\usepackage{calc}
 \usepackage[shortlabels,inline]{enumitem}
 \usepackage[scale=0.75]{geometry}
 
 \usepackage[unicode]{hyperref}
+
+\newcommand{\textover}[3][l]{%
+  % #1 is the alignment, default l
+  % #2 is the text to be printed
+  % #3 is the text for setting the width
+  \makebox[\widthof{#3}][#1]{#2}%
+}
+
 \hypersetup{
     colorlinks=true,
     linkcolor=color1,
@@ -39,7 +47,7 @@ BoldItalicFont=LinLibertine_RBI.otf
 
 \phone[mobile]{+33~(0)~6~37~63~82~71}
 
-\email{hugo.mougard@gmail.com}
+\email{hugo@mougard.fr}
 
 \social[github]{m09}
 
@@ -49,38 +57,86 @@ BoldItalicFont=LinLibertine_RBI.otf
 
 \makecvtitle
 
+\section{Experience}
+
+\cventry{03/17–\textover{now}{03/18}}%
+{Deep Learning Engineer}%
+{Brave Bots}%
+{Nantes, France}%
+{}%
+{Make programs see, talk and understand. Explain to others how to do
+  it.}
+
+\cventry{10/16–02/17}%
+{Deep Learning Engineer}%
+{CogniTalk}%
+{Nantes, France}%
+{}%
+{Make programs talk and understand.}
+
+\cventry{09/14–09/16}%
+{Ph.D. Student}%
+{University of Nantes}%
+{Nantes, France}%
+{}%
+{Research ways to align multimodal content with deep learning.}
+
+\cventry{03/14–08/14}%
+{Research Intern}%
+{National Institute of Informatics}%
+{Tokyo, Japan}%
+{}%
+{Simplify text automatically.}
+
+\cventry{04/13–07/13}%
+{Research Intern}%
+{Dublin City University}%
+{Dublin, Republic of Ireland}%
+{}%
+{Retrieve information in medical records.}
+
+\cventry{04/12–07/12}%
+{Research Intern}%
+{University of Nantes}%
+{Nantes, France}%
+{}%
+{Study and organize grammatical inference litterature and code.}
+
 \section{Education}
-\cventry{2014–2016}{Ph.D. in Computer Science}{University of
-  Nantes}{\textbf{undefended}}{}{Subject: Multimodal Alignment for Educational Resources}
-\cventry{2012–2014}{M.Sc. in Computer Science}{University of
-  Nantes}{}{}{\href{http://atal.univ-nantes.fr}{ATAL} specialization
-  in Machine Learning \& Natural Language Processing}
-\cventry{2009–2012}{B.Sc. in Computer Science}{University of Nantes}{}{}{}
 
-\section{Internships}
-\cventry{2014}{Text simplification}{National Institude of
-  Informatics}{Tokyo}{5 months}{Text simplification using Simple English Wikipedia.}
+\cventry{2014–2016}%
+{Ph.D. in Computer Science}%
+{University of Nantes}%
+{Nantes, France}%
+{\textbf{undefended}}%
+{Research ways to align multimodal content with deep learning.}
 
-\cventry{2013}{Information Retrieval}{Dublin City
-  University}{Dublin}{3 months}{Query expansion on medical data.}
+\cventry{2012–2014}%
+{M.Sc. in Computer Science}%
+{University of Nantes}%
+{Nantes, France}%
+{}%
+{Specialization in Machine Learning \& Natural Language Processing}
 
-\cventry{2012}{Grammatical Inference}{Laboratoire d'Informatique
-  Nantes Atlantique}{Nantes}{2 months}{Bibliographic study.}
-
-\nocite{boudin-mougard-favre:2015:EMNLP}
-\nocite{Mougard:2015:PVW:2740908.2742017}
-\nocite{mougardrecital2015}
-\bibliographystyle{apalike}
-\bibliography{bibtex}
+\cventry{2009–2012}%
+{B.Sc. in Computer Science}%
+{University of Nantes}%
+{Nantes, France}%
+{}%
+{}
 
 \section{Research Interests}
-\cvitem{}{My research interests are centered around multimodal
-  Information Retrieval and Machine Learning applied to Natural Language
-  Processing. More precisely, I enjoy working on text representation and understanding.}
+\cvitem{}{My research interests are centered around natural language
+  processing and natural language understanding using deep learning. I
+  am also closely following research in multimodal deep learning.}
 
 \section{Skills}
-\cvitem{Software}{Good knowledge of several Machine Learning and Natural Language Processing frameworks: UIMA, OpenNLP, Stanford CoreNLP, Theano, Lasagne, Lucene, GIZA++.}
-\cvitem{Programming languages}{Language agnostic with more experience in Java, Python and Bash.}
+\cvitem{Software}{Good knowledge and experience in several Machine
+  Learning and Natural Language Processing frameworks: PyTorch,
+  Theano, Lasagne, NLTK, Stanford CoreNLP, Gensim.}
+
+\cvitem{Programming languages}{Language agnostic with more experience
+  in Python, Java and Bash.}
 
 \section{Languages}
 \cvitem{French}{\textbf{Mother tongue}}{}
@@ -90,56 +146,19 @@ BoldItalicFont=LinLibertine_RBI.otf
 
 \section{References}
 \begin{itemize}
-\item Dr.~Colin de la Higuera, Professor at Nantes University,
-  <\href{mailto:cdlh@univ-nantes.fr}{cdlh@univ-nantes.fr}>
-\item Dr.~Solen Quiniou, Assistant Professor at Nantes University,
-  <\href{mailto:solen.quiniou@univ-nantes.fr}{solen.quiniou@univ-nantes.fr}>
+\item Dr.~Stefan Knerr, CEO at CogniTalk,
+  <\href{mailto:caneahan.technologies@orange.fr}{caneahan.technologies@orange.fr}>
+\item Dr.~Florian Boudin, Assistant Professor at Nantes University,
+  <\href{mailto:florian.boudin@univ-nantes.fr}{florian.boudin@univ-nantes.fr}>
 \item Dr.~Akiko Aizawa, Professor at NII and University of Tokyo,
   <\href{mailto:aizawa@nii.ac.jp}{aizawa@nii.ac.jp}>
 \item Dr.~Lorraine Goeuriot, Assistant Professor at Université Joseph
   Fourier,
   <\href{mailto:lorraine.goeuriot@imag.fr}{lorraine.goeuriot@imag.fr}>
-\item Dr.~Florian Boudin, Assistant Professor at Nantes University,
-  <\href{mailto:florian.boudin@univ-nantes.fr}{florian.boudin@univ-nantes.fr}>
+\item Dr.~Colin de la Higuera, Professor at Nantes University,
+  <\href{mailto:cdlh@univ-nantes.fr}{cdlh@univ-nantes.fr}>
 \end{itemize}
 
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-
-% \clearpage
-% %-----       letter       ---------------------------------------------------------
-% % recipient data
-% \recipient{LxMLS 2015}{Instituto Superior Técnico\\%
-% Lisbon, Portugal}
-% \date{April 8, 2015}
-% \opening{To whom it may concern,}
-% \closing{Best regards,}
-% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-% \makelettertitle
-
-% The reason why we want to attend LxMLS is that our team is focused on
-% Machine Learning applied to NLP in different domains (Information
-% Retrieval, Discourse Analysis, Multimodal Alignment, etc). Therefore
-% the high quality courses and labs of the Lisbon Machine Learning
-% Summer School would allow us to explore state of the art Deep Learning
-% techniques in several domains, which is of utmost interest to us.
-
-% Personnally, I started a Ph.D. 6 months ago that is deeply linked to
-% paraphrase detection, topic modeling and several other language
-% comprehension tasks to be able to correctly align multimodal
-% documents. The power of the deep learning models in those tasks has
-% already been demonstrated and I can't wait to learn more about them in
-% the LxMLS.
-
-% Furthermore, this summer school is for me an unique opportunity to
-% meet like-minded students and great experts (professionnals and
-% researchers). I wish and hope that this will lead to interesting
-% collaboration opportunities.
-
-% \makeletterclosing
-
-% %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
 
 
