@@ -22,7 +22,7 @@ BoldItalicFont=LinLibertine_RBI.otf
 \usepackage{calc}
 \usepackage[shortlabels,inline]{enumitem}
 \usepackage[scale=0.75]{geometry}
-
+\usepackage[defaultbib]{bibtopic}
 \usepackage[unicode]{hyperref}
 
 \newcommand{\textover}[3][l]{%
@@ -59,48 +59,56 @@ BoldItalicFont=LinLibertine_RBI.otf
 
 \section{Experience}
 
-\cventry{03/17–\textover{now}{03/18}}%
-{Deep Learning Engineer}%
-{Brave Bots}%
+\cventry{08/18–\textover{now}{03/18}}%
+{Senior Machine Learning Engineer}%
+{source\{d\}}%
 {Nantes, France}%
 {}%
-{Make programs see, talk and understand. Explain to others how to do
-  it.}
+{Empower developers by producing data-aware tooling.}
+
+\cventry{03/17–{08/18}}%
+{Machine Learning Consultant}%
+{Freelance}%
+{Nantes, France}%
+{}%
+{ML, NLP, NLU and CV consultancy \& training.}
 
 \cventry{10/16–02/17}%
 {Deep Learning Engineer}%
 {CogniTalk}%
 {Nantes, France}%
 {}%
-{Make programs talk and understand.}
+{NLP and NLU engineering.}
 
 \cventry{09/14–09/16}%
 {Ph.D. Student}%
 {University of Nantes}%
 {Nantes, France}%
 {}%
-{Research ways to align multimodal content with deep learning.}
+{Research multimodal content alignment using deep learning (CV, NLP
+  and NLU research).}
 
 \cventry{03/14–08/14}%
 {Research Intern}%
 {National Institute of Informatics}%
 {Tokyo, Japan}%
 {}%
-{Simplify text automatically.}
+{Simplify text automatically (NLP research).}
 
 \cventry{04/13–07/13}%
 {Research Intern}%
 {Dublin City University}%
 {Dublin, Republic of Ireland}%
 {}%
-{Retrieve information in medical records.}
+{Retrieve information in medical records (NLP research).}
 
 \cventry{04/12–07/12}%
 {Research Intern}%
 {University of Nantes}%
 {Nantes, France}%
 {}%
-{Study and organize grammatical inference litterature and code.}
+{Study and organize grammatical inference litterature and code
+  (NLP research).}
 
 \section{Education}
 
@@ -127,37 +135,111 @@ BoldItalicFont=LinLibertine_RBI.otf
 
 \section{Research Interests}
 \cvitem{}{My research interests are centered around natural language
-  processing and natural language understanding using deep learning. I
-  am also closely following research in multimodal deep learning.}
+  processing, natural language understanding and machine learning on
+  code.}
 
-\section{Skills}
-\cvitem{Software}{Good knowledge and experience in several Machine
-  Learning and Natural Language Processing frameworks: PyTorch,
-  Theano, Lasagne, NLTK, Stanford CoreNLP, Gensim.}
+\section{Software}
+\cvitem{Frameworks}{Good knowledge and experience in several machine
+  learning and natural language processing frameworks: PyTorch, DGL,
+  sklearn, bigARTM, Stanford CoreNLP, Gensim, UIMA (non-exhautive)}
 
 \cvitem{Programming languages}{Language agnostic with more experience
   in Python, Java and Bash.}
+
+\section{Publications}
+
+\bibliographystyle{unsrt}
+
+\subsection{International Conferences}
+\begin{btSect}{confs}
+\btPrintNotCited
+\end{btSect}
+
+\subsection{International Workshops}
+\begin{btSect}{workshops}
+\btPrintNotCited
+\end{btSect}
+
+\subsection{Technical Reports}
+\begin{btSect}{technical-reports}
+\btPrintNotCited
+\end{btSect}
+
+\section{Workshops}
+
+\begin{itemize}
+\item \href{https://github.com/m09/deeplearning-codelab}{Understand
+    your code with Machine Learning on Source Code}, DevFest Nantes,
+  2019.
+\item \href{https://github.com/m09/deeplearning-codelab}{The Deep
+    Learning Codelab} (in French), DevFest Nantes, 2017.
+\item
+  \href{https://github.com/nantes-machine-learning-meetup/NMLM/tree/master/2015-10-05__r\%C3\%A9gression-lin\%C3\%A9aire-logistique}{
+    Linear \& Logistic Regression} (in French), Nantes Machine
+  Learning Meetup, 2015.
+\end{itemize}
+
+\section{Talks}
+
+\subsection{2019}
+
+\begin{itemize}
+\item
+  \href{https://www.meetup.com/Nantes-Machine-Learning-Meetup/events/265265431/}{Overton,
+    Apple-flavored ML} (in French), Nantes Machine Learning Meetup.
+\item
+  \href{https://www.eventbrite.com/e/tech-environmental-collapse-tickets-57986002695}{Tech
+    \& Environmental Collapse}, source\{d\} Meetup.
+\end{itemize}
+
+\subsection{2018}
+
+\begin{itemize}
+\item
+  \href{https://www.meetup.com/GOTO-Nights-CPH/events/256342503/}{Bootstrapping
+    Machine Learning on Code with ideas from NLP}, GOTO Nights
+  Copenhagen.
+\item
+  \href{https://www.mapado.com/nantes/la-matinale-de-la-data-science-et-du-machine-learning}{Ins
+    and outs of Machine Learning} (in French), Data Science and
+  Machine Learning Special, ENI.
+\end{itemize}
+\subsection{2017}
+
+\begin{itemize}
+\item
+  \href{https://www.meetup.com/Nantes-Machine-Learning-Meetup/events/239481485/}{Generative
+    Adversarial Networks, a New Paradigm to Train ANNs} (in French),
+  Nantes Machine Learning Meetup.
+\end{itemize}
+
+\subsection{2016}
+
+\begin{itemize}
+\item \href{https://youtu.be/xv2S8A1EPqI}{Artificial Intelligence: How
+    Google Defeated One of the Best Go Players} (in French), Nantes
+  University Public Conference.
+\item \href{https://youtu.be/KuvXb2nILLc}{Solving Go with Machine
+    Learning} (in French), PhD Society (LOGIN) Talk.
+\item
+  \href{https://www.meetup.com/Nantes-Machine-Learning-Meetup/events/226648150/}{Neural
+    Programming} (in French), Nantes Machine Learning Meetup.
+\end{itemize}
+
+\subsection{2015}
+
+\begin{itemize}
+\item
+  \href{https://www.meetup.com/Nantes-Machine-Learning-Meetup/events/221108033/}{Sequence
+    to Sequence Learning with Neural Networks} (in French), Nantes
+  Machine Learning Meetup.
+\end{itemize}
 
 \section{Languages}
 \cvitem{French}{\textbf{Mother tongue}}{}
 \cvitem{English}{\textbf{Expert}}{}
 \cvitem{Spanish}{Good reading comprehension}{}
 \cvitem{Japanese}{Basic knowledge}{}
-
-\section{References}
-\begin{itemize}
-\item Dr.~Stefan Knerr, CEO at CogniTalk,
-  <\href{mailto:caneahan.technologies@orange.fr}{caneahan.technologies@orange.fr}>
-\item Dr.~Florian Boudin, Assistant Professor at Nantes University,
-  <\href{mailto:florian.boudin@univ-nantes.fr}{florian.boudin@univ-nantes.fr}>
-\item Dr.~Akiko Aizawa, Professor at NII and University of Tokyo,
-  <\href{mailto:aizawa@nii.ac.jp}{aizawa@nii.ac.jp}>
-\item Dr.~Lorraine Goeuriot, Assistant Professor at Université Joseph
-  Fourier,
-  <\href{mailto:lorraine.goeuriot@imag.fr}{lorraine.goeuriot@imag.fr}>
-\item Dr.~Colin de la Higuera, Professor at Nantes University,
-  <\href{mailto:cdlh@univ-nantes.fr}{cdlh@univ-nantes.fr}>
-\end{itemize}
 
 \end{document}
 
